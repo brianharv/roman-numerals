@@ -23,6 +23,23 @@ _this app utilizes javascript functionality to convert user inputted numbers int
 
 ## Tests
 
+Describe: convertToRomanNumeral()
+Test: "The value of symbols will be added in the converted form"
+Expect: convertToRomanNumeral(2).toEqual("II");
+
+Test: "Converted numerals cannot contain the same letter more than three times in a row"
+Expect: convertToRomanNumeral(8).toEqual("VIII");
+Expect: convertToRomanNumeral(9).toEqual("IX");
+
+Test: "A symbol appearing after a larger value symbol will be added to that symbol"
+Expect: convertToRomanNumeral(6).toEqual("VI");
+
+Test: "A symbol appearing before a larger value symbol will be subtracted from that symbol"
+Expect: convertToRomanNumeral(90).toEqual("XC");
+
+Test: "Converted numerals will be broken into thousands, hundreds, tens, and ones and added together"
+Expect: convertToRomanNumeral(990).toEqual("CMXC");
+
 ## Known Bugs
 
 _No known bugs_
