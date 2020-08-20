@@ -15,6 +15,12 @@ _this app utilizes javascript functionality to convert user inputted numbers int
 
 ## Specs
 
+* The program will convert numbers into Roman Numerals, returning a string representing the converted number
+* (Rule 1) The value of all symbols will be added
+* (Rule 2a) Roman numeral cannot contain more than three of the same characters in a row
+* (Rule 2b) Roman numeral symbols must be in descending order in terms of value. If a lower value symbol is placed left of a higher value symbol, the left symbol will be subtracted from the right symbol
+* (Rule 3) Numbers will be broken into thousands, hundreds, tens, and ones and then converted and placed together
+
 ## Tests
 
 ## Known Bugs
